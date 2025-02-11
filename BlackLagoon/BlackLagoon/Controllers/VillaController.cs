@@ -43,5 +43,61 @@ namespace BlackLagoon.Controllers
             else
             return View(newVilla);
         }
+        
+        public IActionResult Update(int villaId)
+        {
+            Villa? villa = _db.Villas.FirstOrDefault(u=>u.Id==villaId);
+            if(villa == null)
+            {
+                return RedirectToAction("Error","Home");
+            }
+            return View(villa);
+        }
+        [HttpPost]
+        public IActionResult Update(Villa newVilla)
+        {
+            if(ModelState.IsValid)
+            {
+                _db.Villas.Update(newVilla);
+                _db.SaveChanges();
+                TempData["success"] = "Villa updated successfully";
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+
+                TempData["error"] = "Villa not updated";
+                return View(newVilla);
+            }
+        }
+        public IActionResult Delete(int villaId)
+        {
+            Villa? villa = _db.Villas.FirstOrDefault(u => u.Id == villaId);
+            if (villa is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(villa);
+        }
+        [HttpPost]
+        public IActionResult Delete(Villa newVilla)
+        {
+            Villa? villaFromDb= _db.Villas.FirstOrDefault(u => u.Id == newVilla.Id);
+            if (villaFromDb is not null)
+            {
+                _db.Villas.Remove(villaFromDb);
+                _db.SaveChanges();
+                TempData["success"] = "Villa deleted successfully";
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                
+                TempData["error"] = "Villa not deleted";
+                return View();
+            }
+            
+        }
+
     }
 }

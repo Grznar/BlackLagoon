@@ -1611,7 +1611,10 @@
         },
         "runtime": {
           "bin/placeholder/BlackLagoon.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "BlackLagoon.Infrastructure/1.0.0": {
         "type": "project",
