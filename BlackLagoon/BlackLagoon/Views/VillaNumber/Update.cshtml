@@ -6,13 +6,13 @@
 	<div class="card-header bg-success bg-gradient ml-0 py-3">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h2 class="text-white py-2">Create Villa Number</h2>
+				<h2 class="text-white py-2">Update Villa Number</h2>
 			</div>
 		</div>
 	</div>
 	<div class="card-body border p-4">
 		<form method="post" class="row">
-			
+			<input asp-for="VillaNumber.Villa_Number" readonly hidden />
 			<div class="p-3">
 				<div asp-validation-summary="ModelOnly"></div>
 				<div class="form-floating py-2 col-12">
@@ -23,7 +23,7 @@
 					<span asp-validation-for="VillaNumber.VillaId" class="text-danger"></span>
 				</div>
 				<div class="form-floating py-2 col-12">
-					<input asp-for="VillaNumber.Villa_Number" class="form-control border shadow" />
+					<input asp-for="VillaNumber.Villa_Number" disabled class="form-control border shadow" />
 					<label asp-for="VillaNumber.Villa_Number" class=" mt-1">Villa Number</label>
 					<span asp-validation-for="VillaNumber.Villa_Number" class="text-danger"></span>
 				</div>
@@ -36,7 +36,7 @@
 				<div class="row pt-4">
 					<div class="col-6 col-md-3">
 						<button type="submit" class="btn btn-success w-100">
-							<i class="bi bi-check circle"></i> Create
+							<i class="bi bi-check circle"></i> Update
 						</button>
 					</div>
 					<div class="col-6 col-md-3">
