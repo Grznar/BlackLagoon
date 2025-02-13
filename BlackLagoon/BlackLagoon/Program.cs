@@ -1,8 +1,11 @@
 using BlackLagoon.Application.Common.Interfaces;
 using BlackLagoon.Common.Interfaces;
+using BlackLagoon.Domain.Entities;
 using BlackLagoon.Infrastructure.Data;
 using BlackLagoon.Infrastructure.Repository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +16,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options=>
 options.UseSqlServer
 (builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+.AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
 var app = builder.Build();
 

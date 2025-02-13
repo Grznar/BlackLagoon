@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BlackLagoon\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABnAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "BlackLagoon\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-13T05:25:15.908Z",
+              "WhenOpened": "2025-02-13T08:06:16.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BlackLagoon\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-13T05:23:48.097Z",
+              "WhenOpened": "2025-02-13T08:03:55.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BlackLagoon\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BlackLagoon\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T08:00:55.218Z",
               "EditorCaption": ""
             }
           ]

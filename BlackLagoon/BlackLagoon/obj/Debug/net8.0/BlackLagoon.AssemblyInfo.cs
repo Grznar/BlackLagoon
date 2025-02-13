@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlackLagoon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26dbd2fc9a16a02ee00c78dde8c5276461433c0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2ead544fb3dbf06ddc8e06c1cec757e9eda9a54")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlackLagoon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlackLagoon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
