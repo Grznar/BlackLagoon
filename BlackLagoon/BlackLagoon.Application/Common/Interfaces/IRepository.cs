@@ -15,6 +15,8 @@ namespace BlackLagoon.Application.Common.Interfaces
         void Add(T entity);
         
         void Delete(T entity);
+
+        bool Any(Expression<Func<T, bool>> filter = null);
        
     }
 }

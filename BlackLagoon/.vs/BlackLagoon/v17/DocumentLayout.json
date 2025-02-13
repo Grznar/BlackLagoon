@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79D76595-2ADC-41D5-9DC4-F4ED0E2D8E49}|BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.infrastructure\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79D76595-2ADC-41D5-9DC4-F4ED0E2D8E49}|BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj|solutionrelative:blacklagoon.infrastructure\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.application\\common\\interfaces\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|solutionrelative:blacklagoon.application\\common\\interfaces\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79D76595-2ADC-41D5-9DC4-F4ED0E2D8E49}|BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.infrastructure\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79D76595-2ADC-41D5-9DC4-F4ED0E2D8E49}|BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj|solutionrelative:blacklagoon.infrastructure\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.application\\common\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|solutionrelative:blacklagoon.application\\common\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79D76595-2ADC-41D5-9DC4-F4ED0E2D8E49}|BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.infrastructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79D76595-2ADC-41D5-9DC4-F4ED0E2D8E49}|BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj|solutionrelative:blacklagoon.infrastructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.application\\common\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|solutionrelative:blacklagoon.application\\common\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\controllers\\villanumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\controllers\\villanumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\Repository\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Infrastructure\\Repository\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\Repository\\UnitOfWork.cs",
-              "RelativeToolTip": "BlackLagoon.Infrastructure\\Repository\\UnitOfWork.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T16:20:48.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Application\\Common\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "BlackLagoon.Application\\Common\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T16:20:04.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VillaController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\VillaController.cs",
-              "RelativeDocumentMoniker": "BlackLagoon\\Controllers\\VillaController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\VillaController.cs",
-              "RelativeToolTip": "BlackLagoon\\Controllers\\VillaController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAADwv2oAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T15:42:04.858Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BlackLagoon\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T05:25:15.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VillaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\Repository\\VillaRepository.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Infrastructure\\Repository\\VillaRepository.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\Repository\\VillaRepository.cs",
-              "RelativeToolTip": "BlackLagoon.Infrastructure\\Repository\\VillaRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T15:37:22.047Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BlackLagoon\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T05:23:48.097Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IVillaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Interfaces\\IVillaRepository.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Application\\Common\\Interfaces\\IVillaRepository.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Interfaces\\IVillaRepository.cs",
-              "RelativeToolTip": "BlackLagoon.Application\\Common\\Interfaces\\IVillaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T15:36:09.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Program.cs",
-              "RelativeDocumentMoniker": "BlackLagoon\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Program.cs",
-              "RelativeToolTip": "BlackLagoon\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T16:08:29.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Application\\Common\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "BlackLagoon.Application\\Common\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T15:57:40.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Infrastructure\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\Repository\\Repository.cs",
-              "RelativeToolTip": "BlackLagoon.Infrastructure\\Repository\\Repository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAuwDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T16:00:10.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VillaNumberController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\VillaNumberController.cs",
-              "RelativeDocumentMoniker": "BlackLagoon\\Controllers\\VillaNumberController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\VillaNumberController.cs",
-              "RelativeToolTip": "BlackLagoon\\Controllers\\VillaNumberController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T15:42:04.248Z"
             }
           ]
         },

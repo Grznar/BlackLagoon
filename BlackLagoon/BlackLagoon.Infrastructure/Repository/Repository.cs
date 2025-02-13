@@ -62,7 +62,11 @@ namespace BlackLagoon.Infrastructure.Repository
                     query = query.Include(includeProperty);
                 }
             }
-            return query.ToList();
+            return (query.ToList());
+        }
+        public bool Any(Expression<Func<T, bool>> filter = null)
+        {
+        return dbSet.Any(filter);
         }
     }
 }

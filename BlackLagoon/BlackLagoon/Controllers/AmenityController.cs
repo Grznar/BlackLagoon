@@ -10,25 +10,25 @@ using Microsoft.EntityFrameworkCore;
 namespace BlackLagoon.Controllers
 {
     
-    public class VillaNumberController : Controller
+    public class AmenityController : Controller
     {
 
         public IUnitOfWork _unitOfwork;
 
-        public VillaNumberController(IUnitOfWork unitOfwork)
+        public AmenityController(IUnitOfWork unitOfwork)
         {
             _unitOfwork = unitOfwork;
         }
         public IActionResult Index()
         {
-            List<VillaNumber> villas = _unitOfwork.VillaNumbers.GetAll(includeProperties: "Villa").ToList();
+            List<Amenity> villas = _unitOfwork.Amenities.GetAll(includeProperties: "Villa").ToList();
 
             
             return View(villas);
         }
         public IActionResult Create()
         {
-            VillaNumberVM villaNumberVM = new VillaNumberVM()
+            AmenityVM AmenityVM = new AmenityVM()
             {
                 VillaList = _unitOfwork.Villas.GetAll().Select(u => new SelectListItem
                 {
@@ -38,27 +38,27 @@ namespace BlackLagoon.Controllers
             };
             
             
-            return View(villaNumberVM);
+            return View(AmenityVM);
         }
         [HttpPost]
-        public IActionResult Create(VillaNumberVM newVilla)
+        public IActionResult Create(AmenityVM newVilla)
         {
-            bool roomNumberExists = _unitOfwork.VillaNumbers.Any(u => u.Villa_Number == newVilla.VillaNumber.Villa_Number);
-            if (ModelState.IsValid && !roomNumberExists)
+           
+            if (ModelState.IsValid )
             {
 
 
-                _unitOfwork.VillaNumbers.Add(newVilla.VillaNumber);
+                _unitOfwork.Amenities.Add(newVilla.Amenity);
                 _unitOfwork.Save();
-                    TempData["success"] = "Villa created successfully";
+                    TempData["success"] = "Amenity created successfully";
                 
                 
                 return RedirectToAction(nameof(Index));
             }
-            if(roomNumberExists)
-            {
-                TempData["error"] = "Villa number already exists";
-            }
+            
+            
+                TempData["error"] = "Amenity number already exists";
+            
             newVilla.VillaList = _unitOfwork.Villas.GetAll().Select(u => new SelectListItem
             {
                 Text = u.Name,
@@ -67,42 +67,42 @@ namespace BlackLagoon.Controllers
             return View(newVilla);
         }
         
-        public IActionResult Update(int villaNumberId)
+        public IActionResult Update(int AmenityId)
         {
-            VillaNumberVM villaNumberVM = new VillaNumberVM()
+            AmenityVM AmenityVM = new AmenityVM()
             {
                 VillaList = _unitOfwork.Villas.GetAll().ToList().Select(u => new SelectListItem
                 {
                     Text = u.Name,
                     Value = u.Id.ToString()
                 }),
-                VillaNumber = _unitOfwork.VillaNumbers.Get((u => u.Villa_Number == villaNumberId))
+                Amenity = _unitOfwork.Amenities.Get((u => u.Id == AmenityId))
 
             };
-            if (villaNumberVM.VillaNumber == null)
+            if (AmenityVM.Amenity == null)
             {
                 return RedirectToAction("Error","Home");
             }
-            return View(villaNumberVM);
+            return View(AmenityVM);
         }
         [HttpPost]
-        public IActionResult Update(VillaNumberVM newVilla)
+        public IActionResult Update(AmenityVM newVilla)
         {
            
             if (ModelState.IsValid)
             {
 
 
-                _unitOfwork.VillaNumbers.Update(newVilla.VillaNumber);
+                _unitOfwork.Amenities.Update(newVilla.Amenity);
                 _unitOfwork.Save();
-                TempData["success"] = "Villa updated successfully";
+                TempData["success"] = "Amenity updated successfully";
 
 
                 return RedirectToAction(nameof(Index));
             }
             
             
-               TempData["error"] = "Villa number already exists";
+             
             
             newVilla.VillaList = _unitOfwork.Villas.GetAll().Select(u => new SelectListItem
             {
@@ -111,30 +111,30 @@ namespace BlackLagoon.Controllers
             });
             return View(newVilla);
         }
-        public IActionResult Delete(int villaNumberId)
+        public IActionResult Delete(int AmenityId)
         {
-            VillaNumberVM villaNumberVM = new VillaNumberVM()
+            AmenityVM AmenityVM = new AmenityVM()
             {
                 VillaList = _unitOfwork.Villas.GetAll().Select(u => new SelectListItem
                 {
                     Text = u.Name,
                     Value = u.Id.ToString()
                 }),
-                VillaNumber = _unitOfwork.VillaNumbers.Get(u => u.Villa_Number == villaNumberId)
+                Amenity = _unitOfwork.Amenities.Get(u => u.Id == AmenityId)
             };
-            if (villaNumberVM.VillaNumber == null)
+            if (AmenityVM.Amenity == null)
             {
                 return RedirectToAction("Error", "Home");
             }
-            return View(villaNumberVM);
+            return View(AmenityVM);
         }
             [HttpPost]
-        public IActionResult Delete(VillaNumberVM obj)
+        public IActionResult Delete(AmenityVM obj)
         {
-            VillaNumber? villaFromDb= _unitOfwork.VillaNumbers.Get(u => u.Villa_Number == obj.VillaNumber.Villa_Number);
+            Amenity? villaFromDb= _unitOfwork.Amenities.Get(u => u.Id == obj.Amenity.Id);
             if (villaFromDb != null)
             {
-                _unitOfwork.VillaNumbers.Delete(villaFromDb);
+                _unitOfwork.Amenities.Delete(villaFromDb);
                 _unitOfwork.Save();
                 TempData["success"] = "Deleted successfully";
                 return RedirectToAction(nameof(Index));

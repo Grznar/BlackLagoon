@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +27,9 @@ namespace BlackLagoon.Domain.Entities
         public string? ImageUrl { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
+        [NotMapped] 
+        public IFormFile? Image { get; set; }
+        [ValidateNever]
+        public IEnumerable<Amenity> VillaAmenity { get; set; }
     }
 }
