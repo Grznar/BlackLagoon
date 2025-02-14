@@ -1,8 +1,10 @@
 ﻿using BlackLagoon.Application.Common.Interfaces;
+using BlackLagoon.Application.Common.Utility;
 using BlackLagoon.Domain.Entities;
 using BlackLagoon.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BlackLagoon.Controllers
 {
@@ -31,7 +33,98 @@ namespace BlackLagoon.Controllers
         }
         public IActionResult Register()
         {
-            return View();
+            if (!_roleManager.RoleExistsAsync(SD.Role_Admin).GetAwaiter().GetResult())
+            {
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).Wait();
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).Wait();
+            }
+            RegisterVM registerVM = new()
+            {
+                RoleList = _roleManager.Roles.Select(x => new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Name
+                })
+            };
+            return View(registerVM);
+        }
+        [HttpPost]
+        public async Task <IActionResult> Register(RegisterVM registerVM)
+        {
+            
+            ApplicationUser user = new()
+            {
+                UserName = registerVM.Email,
+                Email = registerVM.Email,
+                PhoneNumber= registerVM.PhoneNumber,
+                NormalizedEmail = registerVM.Email.ToUpper(),
+                EmailConfirmed = true,
+                NameOfUser = registerVM.Name,
+                CreationOfUser = DateTime.Now
+                
+            };
+
+
+            var result_ = _userManager.CreateAsync(user, registerVM.Password).GetAwaiter().GetResult();
+
+            if(result_.Succeeded)
+            {
+                if(!string.IsNullOrEmpty(registerVM.Role))
+                {
+                    await _userManager.AddToRoleAsync(user, registerVM.Role);
+                }
+                else
+                {
+                    await _userManager.AddToRoleAsync(user, SD.Role_Customer);
+                }
+                await _signInManager.SignInAsync(user, isPersistent: false);
+            if(string.IsNullOrEmpty(registerVM.RedirectUrl))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            else
+                {
+                return LocalRedirect(registerVM.RedirectUrl);
+                }
+                    
+            }
+
+            foreach (var error in result_.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
+            registerVM.RoleList = _roleManager.Roles.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Name
+            });
+            return View(registerVM);
+            
+
+        }
+        public async Task<IActionResult> Login(LoginVM loginVM)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(loginVM.Email, loginVM.Password, loginVM.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    if (!string.IsNullOrEmpty(loginVM.RedirectUrl))
+                    {
+                        return LocalRedirect(loginVM.RedirectUrl);
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+                else
+                {
+
+                    ModelState.AddModelError("", "Invalid Login Attempt");
+                }
+            }
+            return View(loginVM);
         }
     }
 }

@@ -28,4 +28,11 @@
     <None Include="Views\VillaNumber\Update.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Account\Register.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
