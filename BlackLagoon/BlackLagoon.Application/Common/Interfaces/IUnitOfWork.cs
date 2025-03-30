@@ -12,6 +12,10 @@ namespace BlackLagoon.Application.Common.Interfaces
         IVillaRepository Villas { get; }
         IVillaNumberRepository VillaNumbers { get; }
         IAmenityRepository Amenities { get; }
+
+        IBookingRepository Bookings { get; }
+        IApplicationUserRepository Users { get; }
+
         void Save();
     }
 }

@@ -8,7 +8,17 @@ namespace BlackLagoon.Application.Common.Utility
 {
    public  static class SD
     {
-        public const string Role_Customer = "Admin";
-        public const string Role_Admin = "User";
+        // Roles
+        public const string Role_Customer = "User";
+        public const string Role_Admin = "Admin";
+
+        // Booking Status
+        public const string StatusPending = "Pending";
+        public const string StatusApproved = "Approved";
+        public const string StatusCheckIn= "CheckedIn";
+        public const string StatusCompletted = "Completed";
+        public const string StatusCancelled = "Cancelled";
+        public const string StatusRefuned = "Refunded";
+
     }
 }

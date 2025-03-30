@@ -1,15 +1,17 @@
 ﻿using BlackLagoon.Application.Common.Interfaces;
+using BlackLagoon.Application.Common.Utility;
 using BlackLagoon.Domain.Entities;
 using BlackLagoon.Infrastructure.Data;
 using BlackLagoon.Infrastructure.Repository;
 using BlackLagoon.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlackLagoon.Controllers
 {
-    
+    [Authorize(Roles = SD.Role_Admin)]
     public class AmenityController : Controller
     {
 

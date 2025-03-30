@@ -16,6 +16,8 @@ namespace BlackLagoon.Infrastructure.Repository
         public IVillaNumberRepository VillaNumbers { get; private set; }
 
         public IAmenityRepository Amenities { get; private set; }
+        public IBookingRepository Bookings { get; private set; }
+        public IApplicationUserRepository Users { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
@@ -23,6 +25,8 @@ namespace BlackLagoon.Infrastructure.Repository
             Villas = new VillaRepository(_db);
             VillaNumbers = new VillaNumberRepository(_db);
             Amenities = new AmenityRepository(_db);
+            Bookings = new BookingRepository(_db);
+            Users = new ApplicationUserRepository(_db);
         }
         public void Save()
         {

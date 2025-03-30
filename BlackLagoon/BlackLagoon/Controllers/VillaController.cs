@@ -1,13 +1,15 @@
 ﻿using BlackLagoon.Application.Common.Interfaces;
+using BlackLagoon.Application.Common.Utility;
 using BlackLagoon.Common.Interfaces;
 using BlackLagoon.Domain.Entities;
 using BlackLagoon.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static System.Net.WebRequestMethods;
 
 namespace BlackLagoon.Controllers
 {
-    
+    [Authorize(Roles =SD.Role_Admin)]
     public class VillaController : Controller
     {
 

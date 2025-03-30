@@ -4941,11 +4941,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\BlackLagoon.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\BlackLagoon.csproj",
       "projectName": "BlackLagoon",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\BlackLagoon.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\BlackLagoon.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4966,14 +4966,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\BlackLagoon.Application.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\BlackLagoon.Application.csproj"
+            "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Application\\BlackLagoon.Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Application\\BlackLagoon.Application.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Domain\\BlackLagoon.Domain.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Domain\\BlackLagoon.Domain.csproj"
+            "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Domain\\BlackLagoon.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Domain\\BlackLagoon.Domain.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj"
+            "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Infrastructure\\BlackLagoon.Infrastructure.csproj"
             }
           }
         }

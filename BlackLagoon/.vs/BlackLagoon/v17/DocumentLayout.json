@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\asp.net\\vily\\blacklagoon\\blacklagoon\\views\\booking\\finalizebooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\booking\\finalizebooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\asp.net\\vily\\blacklagoon\\blacklagoon\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon.application\\common\\utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\asp.net\\vily\\blacklagoon\\blacklagoon\\views\\booking\\bookingconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\booking\\bookingconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|c:\\users\\admin\\desktop\\projekty\\asp.net\\vily\\blacklagoon\\blacklagoon.application\\common\\utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAE94B66-537F-4475-982C-87FE6B7D4C21}|BlackLagoon.Application\\BlackLagoon.Application.csproj|solutionrelative:blacklagoon.application\\common\\utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|c:\\users\\admin\\desktop\\projekty\\vily\\blacklagoon\\blacklagoon\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F04AB989-9B54-4E51-9453-58FEEFB5D5E6}|BlackLagoon\\BlackLagoon.csproj|solutionrelative:blacklagoon\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FinalizeBooking.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Booking\\FinalizeBooking.cshtml",
+              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Booking\\FinalizeBooking.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Booking\\FinalizeBooking.cshtml",
+              "RelativeToolTip": "BlackLagoon\\Views\\Booking\\FinalizeBooking.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T07:19:05.332Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SD.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Utility\\SD.cs",
-              "RelativeDocumentMoniker": "BlackLagoon.Application\\Common\\Utility\\SD.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Utility\\SD.cs",
-              "RelativeToolTip": "BlackLagoon.Application\\Common\\Utility\\SD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T04:50:01.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterVM.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\ViewModels\\RegisterVM.cs",
-              "RelativeDocumentMoniker": "BlackLagoon\\ViewModels\\RegisterVM.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\ViewModels\\RegisterVM.cs",
-              "RelativeToolTip": "BlackLagoon\\ViewModels\\RegisterVM.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwBwAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:50:34.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "BlackLagoon\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAABBAAAAAAAAAA==",
+              "Title": "BookingConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Booking\\BookingConfirmation.cshtml",
+              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Booking\\BookingConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Booking\\BookingConfirmation.cshtml",
+              "RelativeToolTip": "BlackLagoon\\Views\\Booking\\BookingConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-13T13:40:38.089Z",
+              "WhenOpened": "2025-03-30T07:12:24.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "BlackLagoon\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-13T08:06:16.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml*",
-              "RelativeToolTip": "BlackLagoon\\Views\\Shared\\_LoginPartial.cshtml*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-13T08:03:55.242Z",
+              "Title": "SD.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Utility\\SD.cs",
+              "RelativeDocumentMoniker": "BlackLagoon.Application\\Common\\Utility\\SD.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon.Application\\Common\\Utility\\SD.cs",
+              "RelativeToolTip": "BlackLagoon.Application\\Common\\Utility\\SD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T07:05:31.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BlackLagoon\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BlackLagoon\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAuwH4AAAAhAAAAAAAAAA==",
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "BlackLagoon\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Projekty\\ASP.NET\\Vily\\BlackLagoon\\BlackLagoon\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "BlackLagoon\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T08:00:55.218Z",
+              "WhenOpened": "2025-03-30T06:58:55.253Z",
               "EditorCaption": ""
             }
           ]

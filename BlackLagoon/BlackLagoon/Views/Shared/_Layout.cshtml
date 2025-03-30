@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BlackLagoon.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/spinner.css"/>
  </head>
 <body>
     <header>
@@ -31,7 +32,11 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li> <a class="dropdown-item " asp-area="" asp-controller="Villa" asp-action="Index">Villas</a></li>
-                                <li<a class="dropdown-item " asp-area="" asp-controller="VillaNumber" asp-action="Index">Villa Numbers</a></li>
+                                
+                                <a class="dropdown-item " asp-area="" asp-controller="VillaNumber" asp-action="Index">Villa Numbers</a>
+                        </li>
+
+                                
                                 
                                 <li><a class="dropdown-item " asp-area="" asp-controller="Amenity" asp-action="Index">Amenities</a></li>
                             </ul>
@@ -44,7 +49,9 @@
         </nav>
     </header>
     <div class="">
+
         <main role="main" class="">
+            <div class="loading spinner" style="display:none;">Loading</div>
 			<partial name="_Notifications" />
             
 
@@ -57,10 +64,12 @@
             &copy; 2025 - BlackLagoon By Jakub Černý
         </div>
     </footer>
+	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+   @*  <script src="~/js/jquery.unobtrusive-ajax.min.js"></script> *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

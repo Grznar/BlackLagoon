@@ -27,7 +27,25 @@ namespace BlackLagoon.Controllers
 
             return View(homeVM);
         }
-
+        [HttpPost]
+        public IActionResult GetVillasByDate(int nights,DateOnly checkInDate)
+        {
+            var list = _unitOfWork.Villas.GetAll(includeProperties: "VillaAmenity");
+            foreach (var villa in list)
+            {
+                if (villa.Id % 2 == 0)
+                {
+                    villa.IsAvailible = false;
+                }
+            }
+            HomePageVM homeVM = new()
+            {
+                CheckInDate = checkInDate,
+                VillaList = list,
+                NumberOfNights = nights
+            };
+            return PartialView("_VillaList",homeVM);
+        }
         public IActionResult Privacy()
         {
             return View();

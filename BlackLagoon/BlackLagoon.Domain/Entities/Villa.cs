@@ -31,5 +31,7 @@ namespace BlackLagoon.Domain.Entities
         public IFormFile? Image { get; set; }
         [ValidateNever]
         public IEnumerable<Amenity> VillaAmenity { get; set; }
+        [NotMapped]
+        public bool IsAvailible { get; set; } = true;
     }
 }
