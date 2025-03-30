@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using BlackLagoon.Application.Common.Interfaces;
+using BlackLagoon.Application.Common.Utility;
 using BlackLagoon.Models;
 using BlackLagoon.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -13,13 +14,13 @@ namespace BlackLagoon.Controllers
         {
             _unitOfWork = unitOfWork;
         }
-        
+
 
         public IActionResult Index()
         {
             HomePageVM homeVM = new()
             {
-                VillaList = _unitOfWork.Villas.GetAll(includeProperties:"VillaAmenity"),
+                VillaList = _unitOfWork.Villas.GetAll(includeProperties: "VillaAmenity"),
                 NumberOfNights = 1,
                 CheckInDate = DateOnly.FromDateTime(DateTime.Now)
 
@@ -28,15 +29,16 @@ namespace BlackLagoon.Controllers
             return View(homeVM);
         }
         [HttpPost]
-        public IActionResult GetVillasByDate(int nights,DateOnly checkInDate)
+        public IActionResult GetVillasByDate(int nights, DateOnly checkInDate)
         {
             var list = _unitOfWork.Villas.GetAll(includeProperties: "VillaAmenity");
+            var villaNumbers = _unitOfWork.VillaNumbers.GetAll().ToList();
+            var bookedVillas = _unitOfWork.Bookings.GetAll(u => u.Status == SD.StatusApproved || u.Status == SD.StatusCheckIn).ToList();
             foreach (var villa in list)
             {
-                if (villa.Id % 2 == 0)
-                {
-                    villa.IsAvailible = false;
-                }
+                int roomsAvaible = SD.VillaRoomsAvaibleCount(
+                    villa, villaNumbers, checkInDate, nights, bookedVillas);
+                villa.IsAvailible= roomsAvaible > 0;
             }
             HomePageVM homeVM = new()
             {
@@ -44,7 +46,7 @@ namespace BlackLagoon.Controllers
                 VillaList = list,
                 NumberOfNights = nights
             };
-            return PartialView("_VillaList",homeVM);
+            return PartialView("_VillaList", homeVM);
         }
         public IActionResult Privacy()
         {
