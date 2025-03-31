@@ -21,15 +21,15 @@ namespace BlackLagoon.Application.Common.Utility
         public const string StatusCancelled = "Cancelled";
         public const string StatusRefuned = "Refunded";
 
-        public static int VillaRoomsAvaibleCount(Villa villa, List<VillaNumber> villaNumbersList, DateOnly checkInDate, int nights,
+        public static int VillaRoomsAvaibleCount(int villaId, List<VillaNumber> villaNumbersList, DateOnly checkInDate, int nights,
            List<Booking> bookings)
         {
             List<int> bookinDate = new();
             int finalAvaibleRoom = int.MaxValue;
-            var roomsInVilla = villaNumbersList.Where(u => u.VillaId == villa.Id).Count();
+            var roomsInVilla = villaNumbersList.Where(u => u.VillaId == villaId).Count();
             for (int i = 0; i < nights; i++)
             {
-                var villasBooked = bookings.Where(u => u.CheckInDate <= checkInDate.AddDays(i) && u.CheckOutDate >= checkInDate.AddDays(i) && u.VillaId == villa.Id);
+                var villasBooked = bookings.Where(u => u.CheckInDate <= checkInDate.AddDays(i) && u.CheckOutDate >= checkInDate.AddDays(i) && u.VillaId == villaId);
                 foreach (var booking in villasBooked)
                 {
                     if (!bookinDate.Contains(booking.VillaNumber))

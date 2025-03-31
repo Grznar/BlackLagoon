@@ -48,6 +48,7 @@ namespace BlackLagoon.Controllers
             {
                 _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).Wait();
                 _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).Wait();
+                
             }
             RegisterVM registerVM = new()
             {
@@ -125,13 +126,21 @@ namespace BlackLagoon.Controllers
                 var result = await _signInManager.PasswordSignInAsync(loginVM.Email, loginVM.Password, loginVM.RememberMe, false);
                 if (result.Succeeded)
                 {
-                    if (!string.IsNullOrEmpty(loginVM.RedirectUrl))
+                    var user= await _userManager.FindByEmailAsync(loginVM.Email);
+                    if (await _userManager.IsInRoleAsync(user, SD.Role_Admin))
                     {
-                        return LocalRedirect(loginVM.RedirectUrl);
+                        return RedirectToAction("Index", "Dashboard");
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        if (!string.IsNullOrEmpty(loginVM.RedirectUrl))
+                        {
+                            return LocalRedirect(loginVM.RedirectUrl);
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index", "Home");
+                        }
                     }
                 }
                 else

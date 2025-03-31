@@ -37,7 +37,7 @@ namespace BlackLagoon.Controllers
             foreach (var villa in list)
             {
                 int roomsAvaible = SD.VillaRoomsAvaibleCount(
-                    villa, villaNumbers, checkInDate, nights, bookedVillas);
+                    villa.Id, villaNumbers, checkInDate, nights, bookedVillas);
                 villa.IsAvailible= roomsAvaible > 0;
             }
             HomePageVM homeVM = new()

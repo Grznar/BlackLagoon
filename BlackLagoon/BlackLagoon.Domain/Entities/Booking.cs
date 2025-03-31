@@ -46,7 +46,8 @@ namespace BlackLagoon.Domain.Entities
         public DateTime ActualCheckInDate { get; set; }
         public DateTime ActualCheckOutDate { get; set; }
 
-        
+        [NotMapped]
+        public List<VillaNumber>VillaNumbers { get; set; }
         public int VillaNumber { get; set; }
         
     }

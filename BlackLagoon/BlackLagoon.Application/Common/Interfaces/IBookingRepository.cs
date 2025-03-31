@@ -8,7 +8,7 @@ namespace BlackLagoon.Common.Interfaces
     {
       
         void Update(Booking entity);
-        void UpdateStatus(int bookingId, string bookingStatus);
+        void UpdateStatus(int bookingId, string bookingStatus,int villaNumber);
         void UpdateStripePaymentId(int bookingId,string sessionId, string paymentId);
         
         
