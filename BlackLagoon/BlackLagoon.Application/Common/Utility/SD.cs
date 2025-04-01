@@ -1,4 +1,5 @@
 ﻿using BlackLagoon.Domain.Entities;
+using BlackLagoon.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,37 @@ namespace BlackLagoon.Application.Common.Utility
                    
             }
             return finalAvaibleRoom;
+        }
+        public static RadialBarChartDto GetRadialBarChartModel(int totalCount, double currentMothCount, double prevMounthCount)
+        {
+            RadialBarChartDto radialBarChart = new();
+            int decreseRation = 0;
+
+            // Pokud je předchozí měsíční hodnota větší než 0, provedeme výpočet
+            if (prevMounthCount > 0)
+            {
+                double ratio = (currentMothCount - prevMounthCount) / prevMounthCount * 100;
+                // Ošetření, zda hodnota nepřekračuje rozsah Int32
+                if (ratio > int.MaxValue)
+                    decreseRation = int.MaxValue;
+                else if (ratio < int.MinValue)
+                    decreseRation = int.MinValue;
+                else
+                    decreseRation = Convert.ToInt32(ratio);
+            }
+            else
+            {
+                // Pokud je prevMounthCount 0, můžeme definovat výchozí hodnotu, např. 0,
+                // případně i jinou logiku podle obchodní logiky
+                decreseRation = 0;
+            }
+
+            radialBarChart.TotalCount = totalCount;
+            radialBarChart.CountInCurrentMotnth = (int)currentMothCount;
+            radialBarChart.HasRatioIncreased = currentMothCount > prevMounthCount;
+            radialBarChart.Series = new int[] { decreseRation };
+
+            return radialBarChart;
         }
     }
 }

@@ -1,7 +1,10 @@
 using BlackLagoon.Application.Common.Interfaces;
+using BlackLagoon.Application.Services.Implemententaion;
+using BlackLagoon.Application.Services.Interface;
 using BlackLagoon.Common.Interfaces;
 using BlackLagoon.Domain.Entities;
 using BlackLagoon.Infrastructure.Data;
+using BlackLagoon.Infrastructure.Migrations;
 using BlackLagoon.Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +20,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options=>
 options.UseSqlServer
 (builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IDashBoardService, DashboardService>();
+builder.Services.AddScoped<IDbInitializor, DbInitializator>();
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 builder.Services.ConfigureApplicationCookie(option =>
@@ -48,9 +53,19 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+SeedDatabase();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+void SeedDatabase()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var services = scope.ServiceProvider;
+        var dbInitializator = services.GetRequiredService<IDbInitializor>();
+        dbInitializator.Initializeta();
+    }
+    }
